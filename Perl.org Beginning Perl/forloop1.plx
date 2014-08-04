@@ -8,3 +8,4 @@ my $element;
 for $element (@array) {
 	print $element, "\n"
 }
+# this is an iterative for loop, rather than a numerical for loop
