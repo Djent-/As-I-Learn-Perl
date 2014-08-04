@@ -8,5 +8,5 @@ print "Enter the exchange rate: ";
 my $yen = <STDIN>;
 print "The exchange rate is $yen per pound.\n";
 print "Enter in a number of yen to convert: "
-my $convert = <STDIN>;
+my $to_convert = <STDIN>;
 print "$convert Yen is worth ", ($convert / $yen), " pounds.\n";
