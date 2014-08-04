@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-@stacks1.plx
+#stacks1.plx
 use warnings;
 use strict;
 
