@@ -17,3 +17,13 @@ print $a, " ", $b, " ", $c, "\n";
 print $a, " ", $b, " ", $c, "\n";
 # more values than variables
 # no warnings, no unexpected effects
+
+($a, $b, $c) = 1;
+print $a, " ", $b, " ", $c, "\n";
+# list of variables on left, scalar on right
+# $a gets 1, everything else gets nothing
+
+$a = (1..3);
+print $a
+# scalar on left, list on right
+# warning that values in the range go unused
