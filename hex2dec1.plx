@@ -4,4 +4,4 @@ use strict;
 use warnings;
 print "Enter in a hexadecimal number: ";
 my $hexadec = <STDIN>;
-print $hexadec / 1, " is ", hex($hexadec), " in decimal.\n"
+print $hexadec, " is ", hex($hexadec), " in decimal.\n"
