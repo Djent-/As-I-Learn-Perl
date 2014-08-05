@@ -4,12 +4,12 @@
 use warnings;
 use strict;
 
-our $position = 2;
+my $position = 2;
 print "Enter a number to which all primes will be listed: ";
-our $finish = <STDIN>;
+my $finish = <STDIN>;
 chomp($finish);
-our @integers = ($position..$finish);
-our @primes;
+my @integers = ($position..$finish);
+my @primes;
 
 while (@integers) {
 	push @primes, shift @integers;
