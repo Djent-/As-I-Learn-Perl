@@ -38,4 +38,4 @@ do {
 	$rate = $rates{$to} / $rates{$from};
 	
 	print "$value $ from is ", $value * $rate, " $to.\n";
-} while (exists $_);
+} while ($_);
