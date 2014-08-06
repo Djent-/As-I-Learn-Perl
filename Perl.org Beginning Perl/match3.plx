@@ -1,4 +1,4 @@
-#!usr/bin/perl
+#!/usr/bin/perl
 #match3.plx
 use warnings;
 use strict;
@@ -26,6 +26,15 @@ if (/$pattern/) {
 
 # ^ looks for the following at the beginning of the string
 $pattern = "^I";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
+
+# will find wander, wonder, and winder
+$pattern = "w[aoi]nder";
 
 if (/$pattern/) {
 	print "The text matches the pattern '$pattern'.\n";
