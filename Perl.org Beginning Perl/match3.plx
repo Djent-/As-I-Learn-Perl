@@ -59,3 +59,21 @@ if (/$pattern/) {
 } else {
 	print "'$pattern' was not found.\n";
 }
+
+# a space followed by 5 word characters followed by a space
+$pattern = "\\s\\w\\w\\w\\w\\w\\s";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
+
+# a word boundary followed by a word character followed by a word boundary
+$pattern = "\\b\\w\\b";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
