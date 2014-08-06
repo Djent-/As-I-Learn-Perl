@@ -121,3 +121,22 @@ if (/$pattern/) {
 } else {
 	print "'$pattern' was not found.\n";
 }
+
+# search for "she" or "he"
+# the "s" is optional in the search
+$pattern = "\\bs?he\\b";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
+
+# did he say "what the Entis is" or "what the Entish word is"?
+$pattern = "what the Entish (word )?is";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
