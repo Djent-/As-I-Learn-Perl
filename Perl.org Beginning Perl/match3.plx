@@ -160,3 +160,17 @@ if (/$pattern/) {
 } else {
 	print "'$pattern' was not found.\n";
 }
+
+# The * symbol is like +, in that it looks for any number of the
+# preceeding character, except * also looks for 0 of that character
+# while + needs at least 1
+
+# searches again for a word boundary followed by 5 word characters
+# followed by another word boundary
+$pattern = "\\b\\w{5}\\b";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
