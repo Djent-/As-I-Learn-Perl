@@ -41,3 +41,12 @@ if (/$pattern/) {
 } else {
 	print "'$pattern' was not found.\n";
 }
+
+# ^ inside [] means to search for anything except the following
+$pattern = "th[^eo]";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
