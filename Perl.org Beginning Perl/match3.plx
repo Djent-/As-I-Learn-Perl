@@ -52,7 +52,7 @@ if (/$pattern/) {
 }
 
 # \d searches for digits 0-9
-$pattern = "\d";
+$pattern = "\\d";
 
 if (/$pattern/) {
 	print "The text matches the pattern '$pattern'.\n";
