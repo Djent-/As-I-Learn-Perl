@@ -150,3 +150,13 @@ if (/$pattern/) {
 } else {
 	print "'$pattern' was not found.\n";
 }
+
+# search at the beginning of the string for any or no whitespace
+# characters, and then a capital letter
+$pattern = "^\\s*[A-Z]";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
