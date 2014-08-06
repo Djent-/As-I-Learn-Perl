@@ -140,3 +140,13 @@ if (/$pattern/) {
 } else {
 	print "'$pattern' was not found.\n";
 }
+
+# find a word boundary followed by any number of word characters
+# followed by another word boundary
+$pattern = "\\b\\w+\\b";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
