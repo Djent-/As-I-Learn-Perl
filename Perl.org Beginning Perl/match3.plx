@@ -86,3 +86,11 @@ if (/$pattern/) {
 } else {
 	print "'$pattern' was not found.\n";
 }
+
+$pattern = "[[:upper:]][[:lower:]]";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
