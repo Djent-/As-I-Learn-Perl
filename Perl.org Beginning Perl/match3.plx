@@ -50,3 +50,12 @@ if (/$pattern/) {
 } else {
 	print "'$pattern' was not found.\n";
 }
+
+# \d searches for digits 0-9
+$pattern = "\d";
+
+if (/$pattern/) {
+	print "The text matches the pattern '$pattern'.\n";
+} else {
+	print "'$pattern' was not found.\n";
+}
