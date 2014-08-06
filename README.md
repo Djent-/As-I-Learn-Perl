@@ -8,4 +8,5 @@ Following http://www.perl.org/books/beginning-perl/ and elsewhere.
 Day 0: No knowledge of Perl.
 
 Day 2: Wrote prime sieve from scratch.
-       100 commits.
+
+100 commits.
