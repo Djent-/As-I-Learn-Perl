@@ -11,3 +11,7 @@ Day 0:
 Day 2: 
   1. Wrote prime sieve from scratch.
   2. 100 commits.
+
+Day 3:
+  1. Studied (for lack of a better word) 100 programs
+  2. Finished chapter on REGEXP (an achievement in itself)
