@@ -11,3 +11,5 @@ while (<FILE>) {
 	print $lineno++;
 	print ": $_";
 }
+
+# equivalent to "print $lineno++, ": $_" while <FILE>"
