@@ -20,3 +20,5 @@ if ($numeric) {
 } else {
 	@file = sort @file;
 }
+
+print OUTPUT @file;
