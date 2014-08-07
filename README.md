@@ -15,3 +15,6 @@ Day 2:
 Day 3:
   1. Studied (for lack of a better word) 100 programs
   2. Finished chapter on REGEXP (an achievement in itself)
+  
+Day 4:
+  1. Wrote a file crawler from scratch.
