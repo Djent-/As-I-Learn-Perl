@@ -5,7 +5,7 @@ use strict;
 
 my $numeric = 0;
 my $input = shift;
-if (defined $input and $input ep "-n") {
+if (defined $input and $input eq "-n") {
 	$numeric = 1;
 	$input = shift;
 }
