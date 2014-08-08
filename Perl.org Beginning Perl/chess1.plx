@@ -19,6 +19,7 @@ while (1) {
 		for my $j (0..7) { # Column
 			if (defined $chessboard[$i]->[$j]) {
 				print $chessboard[$i]->[$j];
+			# Test modulo for even and odd
 			} elsif ( ($i %2) == ($j %2) ) {
 				print ",,";
 			} else {
