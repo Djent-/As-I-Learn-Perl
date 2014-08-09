@@ -3,11 +3,7 @@
 #exercise 12
 use warnings;
 use strict;
-
-my ($hours, $minutes, $seconds) = secs2hms(3723);
-print "3723 seconds is $hours hours, $minutes minutes, and $seconds seconds\n";
-my $time = secs2hms(6868);
-print "6868 seconds is $time\n";
+my $seconds;
 
 sub secs2hms {
 	my ($h,$m);
@@ -23,9 +19,12 @@ sub secs2hms {
 }
 
 sub get_input {
-	
+	print "Enter a number of seconds: ";
+	chomp ($seconds = <>);
+	return secs2hms($seconds);
 }
 
 while (1) {
-	
+	my ($h,$m,$s) = get_input();
+	print "$seconds seconds is $h hours, $m minutes, and $s seconds\n";
 }
