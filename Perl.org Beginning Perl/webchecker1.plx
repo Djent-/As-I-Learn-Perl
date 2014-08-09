@@ -11,7 +11,7 @@ die "Usage: $0 <starting point> <site base>\n"
 	unless @ARGV == 2;
 	
 my ($start, $base) = @ARGV;
-# add "/" to $base (?)
+# add "/" to $base unless it already ends in one
 $base .= "/" unless $base =~ m|/$|;
 
 die "$start appears not to be in $base\n"
@@ -20,6 +20,7 @@ traverse($start);
 
 sub traverse {
 	my $url = shift;
+	# the following line is a problem
 	$url =~ s|/$|/index.html|;
 	# increment $seen{$url} and return if it's over 1 already
 	return if $seen{$url}++;	# break circular links
@@ -56,6 +57,7 @@ sub extract_links {
 	# directory = the current link minus the filename
 	$dir =~ s|(.*)/.*?$|$1|;
 	# links are all cases in which there is an HREF tag
+	# the following line is a problem
 	for (@links = ($page =~ /<A HREF=["']?([^\s"'>]+)["']?/gi)) {
 		$_ = $base.$_ if s|^/||;
 		$_ = $dir."/".$_ if !/^(ht|f)tp:/;
