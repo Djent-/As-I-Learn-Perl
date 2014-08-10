@@ -1,6 +1,6 @@
 #c:/perl64/bin
 #buggy1.plx
-#142
+#exercise 15
 sub options;
 sub read;
 sub list;
