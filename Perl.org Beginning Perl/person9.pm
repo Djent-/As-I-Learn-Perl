@@ -66,7 +66,7 @@ $body
 
 Yours truly,
 EOF
-	return self;
+	return $self;
 }
 
 1;
