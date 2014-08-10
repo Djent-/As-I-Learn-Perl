@@ -5,7 +5,7 @@ My escapades as I learn Perl from various books on the internet.
 
 Following http://www.perl.org/books/beginning-perl/ and elsewhere.
 
-Day 0: 
+Day 0 (2014:08:03): 
   1. No knowledge of Perl.
 
 Day 2: 
@@ -18,3 +18,6 @@ Day 3:
   
 Day 4:
   1. Wrote a file crawler from scratch.
+
+Day 7:
+  1. Finished all portions of Beginning Perl that do not require internet access
