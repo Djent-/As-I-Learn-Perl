@@ -2,7 +2,7 @@
 #persontest1.plx
 #147
 use warnings;
-ust strict;
+use strict;
 use Person2;
 
 my $person = Person->new();
