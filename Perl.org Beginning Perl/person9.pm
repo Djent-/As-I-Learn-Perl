@@ -45,7 +45,7 @@ sub fullname {
 
 sub printletter {
 	my $self = shift;
-	my $name = $self->fillname;
+	my $name = $self->fullname;
 	my $address = $self->address;
 	my $forename = $self->forename;
 	my $body = shift;
