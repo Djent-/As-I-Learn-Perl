@@ -19,6 +19,8 @@ sub FETCH {
 
 sub STORE {
 	my $self = shift;
+	my $value = shift;
+	warn "You said $value\n";
 	$$self = 0;
 }
 
