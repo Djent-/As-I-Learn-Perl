@@ -9,7 +9,7 @@ Day 0 (2014:08:03):
   1. No knowledge of Perl.
 
 Day 2: 
-  1. Wrote prime sieve from scratch.
+  1. Wrote (implemented) prime sieve from scratch.
   2. 100 commits.
 
 Day 3:
