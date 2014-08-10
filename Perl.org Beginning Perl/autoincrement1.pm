@@ -17,4 +17,9 @@ sub FETCH {
 	return $$self++;
 }
 
+sub STORE {
+	my $self = shift;
+	$$self = 0;
+}
+
 1;

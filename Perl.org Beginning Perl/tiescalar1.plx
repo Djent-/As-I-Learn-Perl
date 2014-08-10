@@ -12,3 +12,8 @@ print $count, "\n";
 print $count, "\n";
 print $count, "\n";
 print $count, "\n";
+$count = "A string";
+print $count, "\n";
+print $count, "\n";
+print $count, "\n";
+print $count, "\n";
