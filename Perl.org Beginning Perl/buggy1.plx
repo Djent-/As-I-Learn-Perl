@@ -22,7 +22,7 @@ my %hash;
 
 until (/^q/i) {
 	print "What would you like to do? ('o' for options): ";
-	$_ = <>;
+	chomp ($_ = <>);
 	
 	if (exists $options{$_}) {
 		$options{$_}->();
