@@ -51,7 +51,7 @@ sub printletter {
 	my $body = shift;
 	my @date = (localtime)[3,4,5];
 	$date[1]++; # Months start at 0
-	$date[2] += 1900 # Add 1900 to get current year
+	$date[2] += 1900; # Add 1900 to get current year
 	my $date = join "/", @date;
 	
 	print <<EOF;
