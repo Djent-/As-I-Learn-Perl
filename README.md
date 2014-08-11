@@ -3,7 +3,7 @@ As-I-Learn-Perl
 
 My escapades as I learn Perl from various books on the internet.
 
-Following http://www.perl.org/books/beginning-perl/ and elsewhere.
+Following http://www.perl.org/books/beginning-perl/, the OReilly Perl Cookbook, and elsewhere.
 
 Day 0 (2014:08:03): 
   1. No knowledge of Perl.
