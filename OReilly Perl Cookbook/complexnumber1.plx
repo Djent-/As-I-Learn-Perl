@@ -19,3 +19,8 @@ my $a = Math::Complex->new(3,5);
 my $b = Math::Complex->new(2,-2);
 my $c = $a * $b;
 print "c = $c\n";
+
+$c = cplx(3,5) * cplx(2,-2);
+my $d = 3 + 4*i;
+# apparently something changed since the book came out
+printf "sqrt($d) = %s\n", sqrt($d);
