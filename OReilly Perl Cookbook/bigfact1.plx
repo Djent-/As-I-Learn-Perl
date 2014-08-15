@@ -17,6 +17,7 @@ ARG: foreach my $orig (@ARGV) {
 	# if it should use BigInt, create a big int or else use the original
 	$n = $opt_b ? Math::BigInt->new($orig) : $orig;
 	if ($n + 0 ne $n) { # this will throw a warning, believe it or not
+		# it actually doesn't throw a warning
 		printf STDERR "bigfact: %s would become %s\n", $n, $n+0 if $opt_d;
 		load_biglib();
 		# if the user meant to use a big int
