@@ -31,7 +31,7 @@ while ($_ = readdir(DH)) {
 	next if -d $_;
 	my $filename = $_;
 	# open the file or print error
-	open FILE, $filename or die $!;
+	open FILE, "$directory/$filename" or die $_ . " " . $!;
 	my @file = <FILE>;
 	# cycle over the lines in the file
 	for (0..$#file) {
