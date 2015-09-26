@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# Tutorial from http://www.perlmonks.org/?nodeid=181977#basics
+# Tutorial from http://www.perlmonks.org/?node_id=181977#basics
 
 use warnings;
 use strict;
